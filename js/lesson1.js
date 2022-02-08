@@ -67,7 +67,7 @@ const friends = [
 //   friend.newprop = 555;
 // }
 
-console.table(friends);
+// console.table(friends);
 
 const findFriendByName = function (allFriends, name) {
   //   for (const friend of allFriends) {
@@ -156,3 +156,40 @@ cart.remove("🍎");
 // console.table(cart.getItems());
 
 // console.log('Total: ', cart.countTotalPrice());
+
+// let balance = 10000;
+// const payment = 20000;
+
+// console.log(
+//   `Общая стоимость заказа ${payment} кредитов. Проверяем количество доступных средств на счету...`
+// );
+
+// if (payment <= balance) {
+//   console.log(`Все хорошо! Снимаем деньги...`);
+//   balance -= payment;
+//   console.log(`На счету осталось ${balance} кредитов.`);
+// } else console.log("На счету недостаточно средств для совершения операции!");
+// console.log("Операция завершена!");
+
+// let password = "";
+
+// do {
+//   password = prompt("Введите пароль длиннее 4-х символов", "");
+// } while (password.length < 5);
+
+// console.log("Ввели пароль: ", password);
+
+// const max = 10;
+// for (let i = 0; i < max; i += 1) {
+//   console.log(`${max} % ${i} = `, max % i);
+// }
+
+const number = 10;
+
+for (let i = 0; i < number; i += 1) {
+  if (i % 2 === 0) {
+    continue;
+  }
+
+  console.log("Нечетное i: ", i); // 1, 3, 5, 7, 9
+}
