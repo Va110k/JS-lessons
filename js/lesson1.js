@@ -1,3 +1,26 @@
+// for (let i = 0; i <= 5; i += 1) {
+//   console.log(i);
+
+//   if (i === 3) {
+//     console.log("Нашли число 3, прерываем выполнение цикла");
+//     break;
+//   }
+// }
+
+// console.log("Лог после цикла");
+
+//
+// const namber = 10;
+
+// for (let i = 0; i < namber; i += 1) {
+//   if (i % 2 === 0) {
+//     continue;
+//   }
+
+//   console.log("Нечетное i: ", i); // 1, 3, 5, 7, 9
+// }
+//
+
 // const newArray = {
 //   family: ["Nikita", "Natasha", "Valera", "ergdffbfb"],
 //   flatNumber: 3,
@@ -184,12 +207,86 @@ cart.remove("🍎");
 //   console.log(`${max} % ${i} = `, max % i);
 // }
 
-const number = 10;
+// Выносим варианты в массив
+// const redFruits = ["apple", "strawberry", "cherry", "cranberries"];
+// const fruit = "cherry";
+// // Проверяем наличие элемента
+// const hasFruit = redFruits.includes(fruit);
 
-for (let i = 0; i < number; i += 1) {
-  if (i % 2 === 0) {
-    continue;
+// if (hasFruit) {
+//   console.log(`${fruit} is a red fruit!`);
+// } else {
+//   console.log(`${fruit} is a сука fruit!`);
+// }
+
+//lesson 4
+
+// // 1. Объявление параметров x, y, z
+// function multiply(x, y, z) {
+//   console.log(`Результат умножения равен ${x * y * z}`);
+// }
+
+// // 2. Передача аргументов
+// multiply(2, 3, 5); // Результат умножения равен 30
+// multiply(4, 8, 12); // Результат умножения равен 384
+// multiply(17, 6, 25); // Результат умножения равен 2550
+
+// function count(countFrom = 0, countTo = 10, step = 1) {
+//   console.log(`countFrom = ${countFrom}, countTo = ${countTo}, step = ${step}`);
+
+//   for (let i = countFrom; i <= countTo; i += step) {
+//     console.log(i);
+//   }
+// }
+
+// count(1, 5); // countFrom = 1, countTo = 5, step = 1
+// count(2); // countFrom = 2, countTo = 10, step = 1
+// count(); // countFrom = 0, countTo = 10, step = 1
+
+// function fnA() {
+//   console.log("Лог внуртри функции fnA до вызова fnB");
+//   fnB();
+//   console.log("Лог внуртри функции fnA после вызова fnB");
+// }
+
+// function fnB() {
+//   console.log("Лог внутри функции fnB");
+// }
+
+// console.log("Лог перед вызовом fnA");
+// fnA();
+// console.log("Лог после вызова fnA");
+
+// // "Лог перед вызовом fnA"
+// // "Лог внуртри функции fnA до вызова fnB"
+// // "Лог внутри функции fnB"
+// // "Лог внуртри функции fnA после вызова fnB"
+// // "Лог после вызова fnA"
+
+// function bar() {
+//   console.log("bar");
+// }
+
+// function baz() {
+//   console.log("baz");
+// }
+
+// function foo() {
+//   console.log("foo");
+//   bar();
+//   baz();
+// }
+
+// foo();
+
+function countProps(object) {
+  let propCount = 0;
+  // Change code below this line
+  for (const key in object) {
+    if (object.hasOwnProperty(key)) {
+      propCount = key.length;
+    }
   }
-
-  console.log("Нечетное i: ", i); // 1, 3, 5, 7, 9
+  // Change code above this line
+  return propCount;
 }
