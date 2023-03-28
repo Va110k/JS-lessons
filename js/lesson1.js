@@ -454,16 +454,15 @@ function getProductPrice(productName) {
 //   .filter((book) => book.rating > MIN_BOOK_RATING)
 //   .map((rat) => rat.author);
 // console.table(names);
-const book = {
-  title: "The Last Kingdom",
-  author: "Bernard Cornwell",
-  genres: ["historical prose", "adventure"],
-  rating: 8.38,
-};
 
-for (const key in book) {
-  // Ключ
-  console.log(key);
-  // Значение свойства с таким ключом
-  console.log(book[key]);
-}
+// const numbers = [5, 10, 15, 20, 25];
+
+// // Классический for
+// for (let i = 0; i < numbers.length; i += 1) {
+//   console.log(`Индекс ${i}, значение ${numbers[i]}`);
+// }
+
+// // Перебирающий forEach
+// numbers.forEach(function (number) {
+//   console.log(`значение ${number}`);
+// });
